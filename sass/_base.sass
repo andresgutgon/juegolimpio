@@ -1,0 +1,32 @@
+@import "compass/reset"
+@import "compass/css3"
+@import "compass/typography/links/link-colors"
+
+@import "general/colors"
+@import "general/fonts"
+
+$total-columns  : 12            /* a 12-column grid */
+$column-width   : 4em            /* each column is 4em wide */
+$gutter-width   : 1em            /* 1em gutters between columns */
+$grid-padding   : $gutter-width  /* 1em padding on the grid */
+
+
+.base
+    :width 100%
+    :margin 0
+    :padding 0
+    .container
+        +container
+        //+susy-grid-background
+        :min-width 944px
+        .content
+            +span-columns($total-columns)
+            +omega
+            
+header
+  @extend .base   
+  .header_text
+    +pad(3,3)             
+    +span-columns(6)
+    +omega
+    
