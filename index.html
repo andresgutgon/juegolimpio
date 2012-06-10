@@ -22,21 +22,23 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />         
 
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="js/vendor/facebox/src/facebox.css"> 
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
     <!-- All JavaScript at the bottom, except this Modernizr build.
          Modernizr enables HTML5 elements & feature detects for optimal performance.
          Create your own custom Modernizr build: www.modernizr.com/download/ -->   
-    <!--<script src="js/vendor/modernizr-2.5.3.min.js"></script>-->
-    <script type="text/javascript" charset="utf-8">
-      window.twttr = (function (d,s,id) {
-        var t, js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
-        js.src="http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
-      }(document, "script", "twitter-wjs"));  
-    </script>           
+    <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32536399-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>          
     <script type="text/javascript" charset="utf-8">  
         window.twttr = (function (d,s,id) {
           var t, js, fjs = d.getElementsByTagName(s)[0];
@@ -55,19 +57,24 @@
             <div class="header_text">                                                                                               
                 <h3><span class="line"><!----></span><span class="text">#JuegoLimpio</span></h3>
                 <h1>Pídeles a los jugadores de la Selección Española que <span>Abandonen</span> la <span>Eurocopa</span></h1>  
-                <p><a href="#" style="display:none;" class="cta">¿Por qué? (Pulsa aquí)</a></p>
-                <div class="reason">
-                    <h2>Como protesta por el <span>Rescate Criminal</span> que nos imponen la <span>Unión Europea</span> y el <span>Partido Popular</span></h2>    
-                    <p><a href="http://elblocdelcoscu.blogspot.com.es/2012/06/las-claves-del-rescate-para-no-comulgar.html?spref=tw" target="_blank">Explicación más detallada</a></p>
-                </div>
-
+                <p><a id="explanation" href="http://elblocdelcoscu.blogspot.com.es/2012/06/las-claves-del-rescate-para-no-comulgar.html" target="_blank" class="cta">¿Por qué? (Pulsa aquí)</a></p>
             </div>
         </div>
     </header> 
     <div class="base flags">
         <div class="container">
             <div class="flag bad-people">
-                <div class="header">Los malos</div>
+                <div class="header">Los culpables</div>     
+                <ul>
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/rato.png" alt="Rodrigo Rato"></div></li>
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/botin.png" alt="Emilio Botín"></div></li>                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/rajoy.png" alt="Mariano Rajoy"></div></li>                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/zapatero.png" alt="Jose Luís Rodríguez Zapatero"></div></li>                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/deguindos.png" alt="Luís De Guindos"></div></li>                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/salgado.png" alt="Elena Salgado"></div></li>                                                                                                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/montoro.png" alt="Montoro"></div></li>                    
+                    <li><div class="image"><span><!----></span><img src="img/badpeople/merkel.png" alt="Angela Merkel"></div></li>                                                                                                                        
+                 </ul>                
             </div>
             <div class="flag heroes">
                 <div class="header">Nuestros héroes</div>
@@ -157,19 +164,19 @@
                         </div>                        
                     </li>    
                     <li>
+                        <div class="image"><span><!----></span><img src="img/players/negredo.png" alt="Pideselo a Negredo"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/AlvaroNegredo" target="_blank" title="Pideselo a Negredo">@AlvaroNegredo</a>
+                        </div>                        
+                    </li>                                        
+                    <li>
                         <div class="image"><span><!----></span><img src="img/players/pedro.png" alt="Pideselo a Pedro"></div>
                         <div class="action">                                      
                             <span>Pídeselo a</span>
                             <a href="https://twitter.com/#!/_Pedro17_" target="_blank" title="Pideselo a Pedro">@_Pedro17_</a>
                         </div>                        
                     </li>
-                    <li>
-                        <div class="image"><span><!----></span><img src="img/players/negredo.png" alt="Pideselo a Negredo"></div>
-                        <div class="action">                                      
-                            <span>Pídeselo a</span>
-                            <a href="https://twitter.com/#!/AlvaroNegredo" target="_blank" title="Pideselo a Negredo">@AlvaroNegredo</a>
-                        </div>                        
-                    </li>                    
                     <li class="last">
                         <div class="image"><span><!----></span><img src="img/players/navas.png" alt="Pideselo a Navas"></div>
                         <div class="action">                                      
@@ -243,7 +250,7 @@
                 </ul>
             </div>
             <div class="flag twitter-stream">
-                <div class="header">La gente<br />#juegolimpio</div> 
+                <div class="header">La gente<br />#Juegolimpio</div> 
                 <div>                                                 
                     <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>                    
                     <script type="text/javascript" charset="utf-8">   
@@ -280,7 +287,38 @@
             </div>            
         </div>
     </div>
-    
+    <div id="explanation_box" style="display:none;">
+        <div id="explanation_box_inner">
+            <h2>Las claves del rescate BANCARIO</h2>
+            <p>El Gobierno del PP se ha acostumbrado a gobernar negando la realidad, mintiendo a la ciudadanía, cambiando el nombre a las cosas, intentando que los ciudadanos nos traguemos las ruedas de Molino con las que justifican su acción de desgobierno. </p>
+            <p>Con motivo del rescate bancario por parte de la UE esta estrategia ha adquirido su momento culmen. Antes, nos habían dicho que no habría dinero público para la banca, mientras dotaban al FROB de recursos con los que capitalizar Cajas y Bancos. Es verdad que no han sido ni los únicos ni los primeros, pero eso no es excusa.</p>             
+            <p>Incluso con motivo del primer Real Decreto Ley de reestructuración financiera, el 2/2012 llegaron a decir que los 6000 millones aportados al FROB no suponían una transferencia pública a los Bancos. Después, con el estallido de Bankia ya no ha sido posible negar la mayor, que se estaba capitalizando a Bancos y Cajas para salvar inversionistas institucionales con dineros públicos. Pero se ha continuado con la estrategia de los eufemismos para intentar engañar a la ciudadanía.</p>           
+            <h4>La OPERACIÓN RESCATE EUROPEO es toda una demostración de hasta donde se puede llegar, cuando se pretende hacer comulgar a la ciudadanía con ruedas de Molino.</h4>
+            <p>Una semana larga preparando psicológicamente a la ciudadanía para el rescate. Una semana explicando que sería "blando" porque las ayudas son para los Bancos y no para el Estado. O para hacernos creer que no van a haber contrapartidas.</p>
+            <p>La puesta en escena de Guindos ha sido patética, sobre todo cuando el comunicado del Eurogrupo ha desmentido todas sus trampas lingüísticas y engaños Algunas claves para descodificar los engaños:</p>
+            <ul>
+                <li>Los 100.000 millones de € que se facilitaran a Bancos españoles provienen de un Fondo Europeo que entra en vigor el 1 de Julio y que se nutre de las aportaciones de los Estados, o sea de los impuestos de los europeos, españoles incluidos.</li>
+                <li>Los recursos que se ponen a disposición de la recapitalización de los Bancos se ponen a disposición del Estado Español a través del FROB, que es un organismo público, presidido por el subgobernador del Banco de España.</li>
+                <li>Quien firmará el memorándum de compromisos en los próximos días será el gobierno español.</li>
+                <li>Por último, que significa que no van a haber contrapartidas para los ciudadanos. Las contrapartidas ya se han producido y por anticipado. Que son sino la reforma laboral, sanitaria y educativa, los recortes en gastos públicos y prestaciones sociales.</li>
+            </ul>   
+            <p>Pero no solo hay contrapartidas por anticipado, también las habrán de futuro. El Gobierno español se ha comprometido con el Pacto Fiscal de estabilidad (el que nace de la reforma constitucional PSOE PP) a reducir el déficit público en el 2013 al 3%. O sea una reducción de gasto público de más de 30.000 millones euros a añadir a los 29.000 del 2012. A menos claro, que el Gobierno nos diga que ha negociado un aplazamiento del ajuste fiscal,cosa que parece improbable. No solo van a haber contrapartidas sociales, sino que estas van a castigar a varias generaciones. Y es ahí, donde topamos con el problema de fondo.</p>
+            <p>El rescate bancario va a permitir capitalizar a bancos con recursos público, europeos, pero públicos. Otra cosa es que contribuya a reactivar la economía y el empleo. Porque las familias continúan asfixiadas, cuando no hipotecadas y las empresas carecen de financiación. Y nada asegurar que con el rescate eso vaya a cambiar. Ha llegado el momento de decir las cosas por su nombre.</p>
+            <h4>Si las familias y empresas no se desendeudan no hay salida ni fácil ni rápida a la crisis económica.</h4>
+            <p>Y para ello es imprescindible que los Bancos acepten la quita (reducción) y reestructuración de la deuda de familias y empresas. Única manera de que la economía pueda volver a funcionar. Y que este coste vaya a cargo de los grandes inversionistas institucionales, los acreedores de bancos y Estados que hasta ahora han sido los grandes beneficiarios de los rescates de otros países. Los inversionistas han de aceptar una reducción de sus créditos. Pero ahora, no después de haber hundido a los países en dificultades, incluido España.</p>
+            <p>Las soluciones no son fáciles, entre otras cosas porque durante 4 años se ha negado que el problema estuviera en el sistema financiero. Los poderes económicos no quisieron perder la oportunidad de aprovechar la crisis para pegarle un bocado a los salarios, derechos laborales y sociales, para hacer retroceder el Estado Social. Y para ello negaron que la carcoma estuviera en los bancos y dirigieron las contrarreformas a desmontar los avances de cuatro décadas.</p>
+            <p>Que las soluciones no sean fáciles no justifica que el Gobierno actual, como el anterior, continúen engañando a la ciudadanía, intentando que los ciudadanos comulguemos con ruedas de Molino. Por eso se hace urgente poner en marcha una Comisión Nacional de responsabilidades que analice las causas y las responsabilidades del mayor desmán financiero y económico de nuestra historia. Si el Congreso y su dinámica bipartidista bloquea la investigación, la sociedad debe levantarse en pie exigiendo que se ponga en marcha una verdadera investigación. </p>            
+            <div class="source">
+                <h5>Fuente original:</h5>
+                <p><a href="http://elblocdelcoscu.blogspot.com.es/2012/06/las-claves-del-rescate-para-no-comulgar.html" target="_blank">http://elblocdelcoscu.blogspot.com.es</a></p>                                                         
+                <h5>Otras fuentes:</h5>
+                <p><a href="http://opinion.elperiodico.com/ult/7-preguntas-urgentes-tras-el-rescate/" target="_blank">7 Preguntas urgentes tras el rescate</a></p>                                                         
+                <p><a href="http://www.publico.es/dinero/436405/en-que-consiste-el-rescate-y-como-le-afectara-a-su-bolsillo" target="_blank">En qué consiste el rescate y en que le afectará a su bolsillo</a></p>                                                                                         
+                <p><a href="http://www.rtve.es/noticias/20120610/mariano-rajoy-comparece-mediodia-antes-partir-hacia-polonia-para-ver-eurocopa/534322.shtml" target="_blank">Comparecencia de Rajoy en TVE</a></p> 
+                <p><a href="http://www.eldiario.es/zonacritica/2012/06/09/la-letra-pequena-del-rescate-a-espana/" target="_blank">La letra pequeña del rescate a España</a></p>                                                                                                                          
+            </div>
+        </div>                      
+    </div>
 
 
     <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
@@ -288,15 +326,15 @@
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-    <!--<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+    <script src="js/vendor/facebox/src/facebox.js"></script>
     <!-- scripts concatenated and minified via build script -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>            
     <!-- end scripts -->
-    <!--<script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
         twttr.ready(function (twttr){
             twttr.events.bind('tweet', tweetIntentToAnalytics);
-        }          
-    </script>-->
+        });      
+    </script>
 </body>
 </html>

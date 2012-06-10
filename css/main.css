@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 11, ../sass/general/_fonts.sass */
-.serif, blockquote, header .header_text h3 .text, .flags .flag .header {
+.serif, blockquote, header .header_text h3 .text, .flags .flag .header, #explanation_box_inner h4 {
   font-family: Georgia, serif;
 }
 
@@ -395,8 +395,9 @@ header .header_text h2 span, header .header_text h1 span {
 /* line 85, ../sass/_base.sass */
 .flags {
   margin-top: 2em;
+  margin-bottom: 3em;
 }
-/* line 88, ../sass/_base.sass */
+/* line 89, ../sass/_base.sass */
 .flags .flag .header {
   font-size: 2em;
   line-height: 1;
@@ -411,64 +412,29 @@ header .header_text h2 span, header .header_text h1 span {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 99, ../sass/_base.sass */
-.flags .flag.bad-people {
-  width: 23.729%;
-  float: left;
-  margin-right: 1.695%;
-  display: inline;
-}
-/* line 101, ../sass/_base.sass */
-.flags .flag.bad-people .header {
-  background-color: #aa151b;
-  line-height: 70px;
-}
-/* line 104, ../sass/_base.sass */
-.flags .flag.heroes {
-  width: 49.153%;
-  float: left;
-  margin-right: 1.695%;
-  display: inline;
-}
-/* line 106, ../sass/_base.sass */
-.flags .flag.heroes .header {
-  background-color: #f1bf00;
-  line-height: 70px;
-}
-/* line 110, ../sass/_base.sass */
-.flags .flag.heroes ul li {
-  width: 31.034%;
-  float: left;
-  margin-right: 3.448%;
-  display: inline;
+/* line 100, ../sass/_base.sass */
+.flags .flag ul li {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 114, ../sass/_base.sass */
-.flags .flag.heroes ul li.last {
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-}
-/* line 116, ../sass/_base.sass */
-.flags .flag.heroes ul li .action {
+/* line 103, ../sass/_base.sass */
+.flags .flag ul li .action {
   width: 100%;
 }
-/* line 118, ../sass/_base.sass */
-.flags .flag.heroes ul li .action span {
+/* line 105, ../sass/_base.sass */
+.flags .flag ul li .action span {
   display: block;
   width: 100%;
   font-size: 85%;
 }
-/* line 123, ../sass/_base.sass */
-.flags .flag.heroes ul li .image {
+/* line 110, ../sass/_base.sass */
+.flags .flag ul li .image {
   height: 144px;
   width: 144px;
   position: relative;
 }
-/* line 127, ../sass/_base.sass */
-.flags .flag.heroes ul li .image span {
+/* line 114, ../sass/_base.sass */
+.flags .flag ul li .image span {
   position: absolute;
   left: 0em;
   top: 0em;
@@ -478,11 +444,65 @@ header .header_text h2 span, header .header_text h1 span {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 136, ../sass/_base.sass */
-.flags .flag.heroes ul li .image img {
+/* line 123, ../sass/_base.sass */
+.flags .flag ul li .image img {
   margin-top: 7px;
 }
+/* line 126, ../sass/_base.sass */
+.flags .flag.bad-people {
+  width: 23.729%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+}
+/* line 128, ../sass/_base.sass */
+.flags .flag.bad-people .header {
+  background-color: #aa151b;
+  line-height: 70px;
+}
+/* line 132, ../sass/_base.sass */
+.flags .flag.bad-people ul li {
+  width: 100%;
+  float: left;
+  margin-right: 7.143%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+  margin-bottom: 2.8em;
+}
+/* line 136, ../sass/_base.sass */
+.flags .flag.bad-people ul li .image {
+  margin-left: 30px;
+}
 /* line 139, ../sass/_base.sass */
+.flags .flag.heroes {
+  width: 49.153%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+}
+/* line 141, ../sass/_base.sass */
+.flags .flag.heroes .header {
+  background-color: #f1bf00;
+  line-height: 70px;
+}
+/* line 145, ../sass/_base.sass */
+.flags .flag.heroes ul li {
+  width: 31.034%;
+  float: left;
+  margin-right: 3.448%;
+  display: inline;
+}
+/* line 147, ../sass/_base.sass */
+.flags .flag.heroes ul li.last {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+/* line 150, ../sass/_base.sass */
 .flags .flag.twitter-stream {
   width: 23.729%;
   float: left;
@@ -493,7 +513,57 @@ header .header_text h2 span, header .header_text h1 span {
   #margin-left: -1em;
   display: inline;
 }
-/* line 142, ../sass/_base.sass */
+/* line 153, ../sass/_base.sass */
 .flags .flag.twitter-stream .header {
   background-color: #aa151b;
+}
+
+/* line 155, ../sass/_base.sass */
+#explanation_box_inner {
+  width: 600px;
+  height: 600px;
+  overflow: auto;
+  padding: 2em;
+}
+/* line 160, ../sass/_base.sass */
+#explanation_box_inner .source {
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #cccccc;
+}
+/* line 165, ../sass/_base.sass */
+#explanation_box_inner .source h5 {
+  font-size: 85%;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+/* line 170, ../sass/_base.sass */
+#explanation_box_inner .source p a {
+  font-size: 85%;
+}
+/* line 173, ../sass/_base.sass */
+#explanation_box_inner h2 {
+  color: #222222;
+  font-size: 2.5em;
+}
+/* line 176, ../sass/_base.sass */
+#explanation_box_inner p {
+  color: #222222;
+}
+/* line 178, ../sass/_base.sass */
+#explanation_box_inner h4 {
+  font-size: 140%;
+  color: #aa151b;
+}
+/* line 183, ../sass/_base.sass */
+#explanation_box_inner ul {
+  padding: 0 0 0 2em;
+}
+/* line 185, ../sass/_base.sass */
+#explanation_box_inner ul li {
+  margin: 0 0 1em 0;
+  list-style: decimal;
+  list-style-position: inside;
+  line-height: 1.3;
 }

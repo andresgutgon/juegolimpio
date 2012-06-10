@@ -83,7 +83,8 @@ header
                 :color $red
                 :font-weight bold      
 .flags   
-    :margin-top 2em
+    :margin-top 2em   
+    :margin-bottom 3em       
     .flag               
         .header
             @extend .serif    
@@ -94,51 +95,95 @@ header
             +border-radius(6px)   
             :padding 2em 0
             :text-align center  
-            :margin-bottom 1em
+            :margin-bottom 1em       
+        ul
+            li                  
+                :text-align center  
+                :margin-bottom 1em
+                .action
+                    :width 100%
+                    span
+                        :display block
+                        :width 100%
+                        :font-size 85%
+
+                .image
+                    :height 144px
+                    :width 144px
+                    :position relative
+                    span
+                        :position absolute
+                        :left 0em
+                        :top 0em
+                        :width 144px
+                        :height 144px
+                        :background-image url("../img/circle.png")
+                        :background-repeat no-repeat
+                        :background-position left top
+                    img
+                        :margin-top 7px            
             
         &.bad-people
             +span-columns(3)    
             .header             
                 :background-color $red            
-                :line-height 70px
+                :line-height 70px    
+            ul
+                li                  
+                    +span-columns(3,3)
+                    +omega      
+                    :margin-bottom 2.8em
+                    .image
+                        :margin-left 30px
+                
         &.heroes
             +span-columns(6)        
             .header                 
                 :background-color $yellow            
-                :line-height 70px
+                :line-height 70px         
             ul
                 li                  
                     +span-columns(2,6)
-                    :text-align center  
-                    :margin-bottom 1em
                     &.last
-                        +omega   
-                    .action
-                        :width 100%
-                        span
-                            :display block
-                            :width 100%
-                            :font-size 85%
-                            
-                    .image
-                        :height 144px
-                        :width 144px
-                        :position relative
-                        span
-                            :position absolute
-                            :left 0em
-                            :top 0em
-                            :width 144px
-                            :height 144px
-                            :background-image url("../img/circle.png")
-                            :background-repeat no-repeat
-                            :background-position left top
-                        img
-                            :margin-top 7px
+                        +omega     
                             
         &.twitter-stream
             +span-columns(3)             
             +omega           
             .header                 
                 :background-color $red
+#explanation_box_inner
+    :width 600px      
+    :height 600px
+    :overflow auto
+    :padding 2em   
+    .source
+        :width 100%
+        :margin-top 1em
+        :padding-top 1em
+        :border-top 1px solid $grey
+        h5
+            :font-size 85%
+            :width 100% 
+            :margin-bottom 0.5em
+        p
+            a
+                :font-size 85%
+    
+    h2
+        :color $darker  
+        :font-size 2.5em
+    p
+        :color $darker   
+    h4  
+        @extend .serif
+        :font-size 140%
+        :color $red
         
+    ul
+        :padding 0 0 0 2em
+        li
+            :margin 0 0 1em 0
+            :list-style decimal
+            :list-style-position inside
+            :line-height 1.3

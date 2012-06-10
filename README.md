@@ -1,4 +1,4 @@
 juegolimpio
 ===========
 
-Este es el codigo fuente de juegolimpio.org
+Este es el código fuente de juegolimpio.org
