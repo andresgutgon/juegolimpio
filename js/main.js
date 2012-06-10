@@ -11,12 +11,6 @@ $(function() {
        $.facebox({ div: '#explanation_box' }); 
        return false;
     });           
-    //$('.reason').hide();  
-    //$('.cta').show();
-    // $('.cta').click(function(){
-    //     $(this).hide();
-    //     $('.reason').show();
-    // });     
     $(".heroes li a").each(function(){                                        
         var player = $(this).text();
         var url = encodeURIComponent('http://bit.ly/Lr7Gnf');            
