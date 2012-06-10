@@ -14,12 +14,8 @@ $grid-padding   : $gutter-width  /* 1em padding on the grid */
 
           
 body
-    :background-image url('../img/bg.png')  
-    //:background-color $grey_lighter
-    //+background(image-url("bg.png"))
-    //:background-repeat repeat
-    //:background-position left top   
-
+    :background-color $grey_lighter   
+    
 
 .base
     :width 100%
@@ -48,10 +44,10 @@ header
             :background-color $grey_light   
             +background(linear-gradient(#fff, $grey_light))
             +single-box-shadow($grey_dark,0, 0px, 3px, false, true)            
-            p
-                :margin-bottom 0
-                a
-                    :font-size 1.6em
+        p
+            :margin-bottom 0
+            a
+                :font-size 1.6em
                                     
         h3   
             :position relative
@@ -98,6 +94,7 @@ header
             +border-radius(6px)   
             :padding 2em 0
             :text-align center  
+            :margin-bottom 1em
             
         &.bad-people
             +span-columns(3)    
@@ -111,11 +108,37 @@ header
                 :line-height 70px
             ul
                 li                  
-                    +span-columns(2)
+                    +span-columns(2,6)
+                    :text-align center  
+                    :margin-bottom 1em
                     &.last
-                        +omega(6)
+                        +omega   
+                    .action
+                        :width 100%
+                        span
+                            :display block
+                            :width 100%
+                            :font-size 85%
+                            
+                    .image
+                        :height 144px
+                        :width 144px
+                        :position relative
+                        span
+                            :position absolute
+                            :left 0em
+                            :top 0em
+                            :width 144px
+                            :height 144px
+                            :background-image url("../img/circle.png")
+                            :background-repeat no-repeat
+                            :background-position left top
+                        img
+                            :margin-top 7px
+                            
         &.twitter-stream
-            +span-columns(3) 
-            :background-color $red            
-            +omega
+            +span-columns(3)             
+            +omega           
+            .header                 
+                :background-color $red
         

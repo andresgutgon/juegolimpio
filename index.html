@@ -27,8 +27,24 @@
 
     <!-- All JavaScript at the bottom, except this Modernizr build.
          Modernizr enables HTML5 elements & feature detects for optimal performance.
-         Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->   
+    <!--<script src="js/vendor/modernizr-2.5.3.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8">
+      window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+        js.src="http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+      }(document, "script", "twitter-wjs"));  
+    </script>           
+    <script type="text/javascript" charset="utf-8">  
+        window.twttr = (function (d,s,id) {
+          var t, js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+          js.src="http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+          return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));    
+    </script>                                            
 </head>
 <body>
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -37,12 +53,12 @@
     <header>
         <div class="container">
             <div class="header_text">                                                                                               
-                <h3><span class="line"><!----></span><span class="text">Juego Limpio</span></h3>
-                <h1>Pídeles a los jugadores de la Selección Española que <span>Abandonen la Eurocopa</span></h1>  
-                <a href="#" class="cta">Motivo (Pulsa aquí)</a>
-                <div class="reason" style="display:none;">
-                    <h2>Como señal de protesta por el <span>Rescate Criminal</span> que nos ha impuesto la <span>Unión Europea</span> y el <span>Partido Popular</span></h2>    
-                    <p><a href="http://elblocdelcoscu.blogspot.com.es/2012/06/las-claves-del-rescate-para-no-comulgar.html?spref=tw" target="_blank">¿Por qué esta petición?</a></p>
+                <h3><span class="line"><!----></span><span class="text">#JuegoLimpio</span></h3>
+                <h1>Pídeles a los jugadores de la Selección Española que <span>Abandonen</span> la <span>Eurocopa</span></h1>  
+                <p><a href="#" style="display:none;" class="cta">¿Por qué? (Pulsa aquí)</a></p>
+                <div class="reason">
+                    <h2>Como protesta por el <span>Rescate Criminal</span> que nos imponen la <span>Unión Europea</span> y el <span>Partido Popular</span></h2>    
+                    <p><a href="http://elblocdelcoscu.blogspot.com.es/2012/06/las-claves-del-rescate-para-no-comulgar.html?spref=tw" target="_blank">Explicación más detallada</a></p>
                 </div>
 
             </div>
@@ -57,13 +73,210 @@
                 <div class="header">Nuestros héroes</div>
                 <ul>
                     <li>
-                        <div class="image"><span><!----></span><img src="img/players/casillas.png" alt="Pidele a Casillas que abandone la Eurocopa"></div>
-                        <a href="">Pideselo a </a>
+                        <div class="image"><span><!----></span><img src="img/players/casillas.png" alt="Pideselo a Casillas"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/CasillasFans" target="_blank" title="Pideselo a Casillas">@CasillasFans</a>
+                        </div>                        
                     </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/iniesta.png" alt="Pideselo a Iniesta"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/andresiniesta8" target="_blank" title="Pideselo a Iniesta">@andresiniesta8</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/hernandez.png" alt="Pideselo a Xavi"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/Xavi_Hernan" target="_blank" title="Pideselo a Xavi">@Xavi_Hernan</a>
+                        </div>                        
+                    </li>   
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/fabregas.png" alt="Pideselo a Fabregas"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/cesc4official" target="_blank" title="Pideselo a Fabregas">@cesc4official</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/torres.png" alt="Pideselo a Torres"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/Torres" target="_blank" title="Pideselo a Torres">@Torres</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/pique.png" alt="Pideselo a Pique"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/3gerardpique" target="_blank" title="Pideselo a Pique">@3gerardpique</a>
+                        </div>                        
+                    </li>                                                         
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/ramos.png" alt="Pideselo a Ramos"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/SergioRamos" target="_blank" title="Pideselo a Ramos">@SergioRamos</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/reina.png" alt="Pideselo a Reina"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/reina_official" target="_blank" title="Pideselo a Reina">@reina_official</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/alonso.png" alt="Pideselo a Alonso"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/XabiAlonso" target="_blank" title="Pideselo a Alonso">@XabiAlonso</a>
+                        </div>                        
+                    </li>      
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/llorente.png" alt="Pideselo a Llorente"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/llorentefer19" target="_blank" title="Pideselo a Llorente">@llorentefer19</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/mata.png" alt="Pideselo a Mata"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/juanmata10" target="_blank" title="Pideselo a Mata">@juanmata10</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/silva.png" alt="Pideselo a Silva"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/DavidSilva_21" target="_blank" title="Pideselo a Silva">@DavidSilva_21</a>
+                        </div>                        
+                    </li>    
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/pedro.png" alt="Pideselo a Pedro"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/_Pedro17_" target="_blank" title="Pideselo a Pedro">@_Pedro17_</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/negredo.png" alt="Pideselo a Negredo"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/AlvaroNegredo" target="_blank" title="Pideselo a Negredo">@AlvaroNegredo</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/navas.png" alt="Pideselo a Navas"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/_JesusNavas_" target="_blank" title="Pideselo a Navas">@_JesusNavas_</a>
+                        </div>                        
+                    </li> 
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/martinez.png" alt="Pideselo a Martinez"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/Javi24kikiteam" target="_blank" title="Pideselo a Martinez">@Javi24kikiteam</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/juanfran.png" alt="Pideselo a Juanfran"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/Juanfrantorres" target="_blank" title="Pideselo a Juanfran">@Juanfrantorres</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/cazorla.png" alt="Pideselo a Cazorla"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/Santicazorla12" target="_blank" title="Pideselo a Cazorla">@Santicazorla12</a>
+                        </div>                        
+                    </li>    
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/arbeloa.png" alt="Pideselo a Arbeloa"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/aarbeloa17" target="_blank" title="Pideselo a Arbeloa">@aarbeloa17</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/albiol.png" alt="Pideselo a Albiol"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a href="https://twitter.com/#!/R_Albiol" target="_blank" title="Pideselo a Albiol">@R_Albiol</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/alba.png" alt="Pideselo a Alba"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a class="tweet" rel="@Jordi_Alba10" href="https://twitter.com/#!/Jordi_Alba10" target="_blank" title="Pideselo a Alba">@Jordi_Alba10</a>
+                        </div>                        
+                    </li>    
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/busquets.png" alt="Pideselo a Busquets"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a class="tweet" rel="@allBUSQUETS" href="https://twitter.com/#!/allBUSQUETS" target="_blank" title="Pideselo a Busquets">@allBUSQUETS</a>
+                        </div>                        
+                    </li>
+                    <li>
+                        <div class="image"><span><!----></span><img src="img/players/valdes.png" alt="Pideselo a Valdes"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a class="tweet" rel="@1victorvaldes" href="https://twitter.com/#!/vicentedlbosque" target="_blank" title="Pideselo a Valdes">@1victorvaldes</a>
+                        </div>                        
+                    </li>                    
+                    <li class="last">
+                        <div class="image"><span><!----></span><img src="img/players/delbosque.png" alt="Pideselo a Del Bosque"></div>
+                        <div class="action">                                      
+                            <span>Pídeselo a</span>
+                            <a class="tweet" rel="@vicentedlbosque" href="https://twitter.com/#!/vicentedlbosque" target="_blank" title="Pideselo a Del Bosque">@vicentedlbosque</a>
+                        </div>                        
+                    </li>                                                                                                                                                              
                 </ul>
             </div>
             <div class="flag twitter-stream">
-                <div class="header">La gente<br />#juegolimpio</div>
+                <div class="header">La gente<br />#juegolimpio</div> 
+                <div>                                                 
+                    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>                    
+                    <script type="text/javascript" charset="utf-8">   
+                        new TWTR.Widget({
+                          version: 2,
+                          type: 'search',
+                          search: 'PreguntaParaRajoy',
+                          interval: 30000,
+                          title: 'Juego Limpio',
+                          subject: 'Decid NO. Hacedlo por España',
+                          width: 224,
+                          height: 380,
+                          theme: {
+                            shell: {
+                              background: '#aa151a',
+                              color: '#ffffff'
+                            },
+                            tweets: {
+                              background: '#ffffff',
+                              color: '#222222',
+                              links: '#aa151a'
+                            }
+                          },
+                          features: {
+                            scrollbar: false,
+                            loop: true,
+                            live: true,
+                            behavior: 'default'
+                          }
+                        }).render().start();        
+                    </script>
+                    
+                </div>
             </div>            
         </div>
     </div>
@@ -73,21 +286,17 @@
     <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-
+    <!--<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
     <!-- scripts concatenated and minified via build script -->
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>            
     <!-- end scripts -->
-
-    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-         mathiasbynens.be/notes/async-analytics-snippet -->
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <!--<script type="text/javascript" charset="utf-8">
+        twttr.ready(function (twttr){
+            twttr.events.bind('tweet', tweetIntentToAnalytics);
+        }          
+    </script>-->
 </body>
 </html>

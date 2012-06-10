@@ -267,16 +267,16 @@ caption {
 
 /* line 16, ../sass/_base.sass */
 body {
-  background-image: url("../img/bg.png");
+  background-color: #f7f7f7;
 }
 
-/* line 24, ../sass/_base.sass */
+/* line 20, ../sass/_base.sass */
 .base, header {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 28, ../sass/_base.sass */
+/* line 24, ../sass/_base.sass */
 .base .container, header .container {
   *zoom: 1;
   max-width: 59em;
@@ -293,7 +293,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 32, ../sass/_base.sass */
+/* line 28, ../sass/_base.sass */
 .base .container .content, header .container .content {
   width: 100%;
   float: left;
@@ -305,7 +305,7 @@ body {
   display: inline;
 }
 
-/* line 38, ../sass/_base.sass */
+/* line 34, ../sass/_base.sass */
 header .header_text {
   padding-left: 8.475%;
   padding-right: 8.475%;
@@ -320,7 +320,7 @@ header .header_text {
   text-align: center;
   margin-top: 2em;
 }
-/* line 44, ../sass/_base.sass */
+/* line 40, ../sass/_base.sass */
 header .header_text .reason {
   padding: 2%;
   width: 96%;
@@ -340,22 +340,22 @@ header .header_text .reason {
   -moz-box-shadow: inset 0 0px 3px #666666;
   box-shadow: inset 0 0px 3px #666666;
 }
-/* line 51, ../sass/_base.sass */
-header .header_text .reason p {
+/* line 47, ../sass/_base.sass */
+header .header_text p {
   margin-bottom: 0;
 }
-/* line 53, ../sass/_base.sass */
-header .header_text .reason p a {
+/* line 49, ../sass/_base.sass */
+header .header_text p a {
   font-size: 1.6em;
 }
-/* line 56, ../sass/_base.sass */
+/* line 52, ../sass/_base.sass */
 header .header_text h3 {
   position: relative;
   text-align: center;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 61, ../sass/_base.sass */
+/* line 57, ../sass/_base.sass */
 header .header_text h3 .text {
   display: inline-block;
   background-color: #f7f7f7;
@@ -366,7 +366,7 @@ header .header_text h3 .text {
   position: relative;
   text-shadow: #8c8c8c -1px -1px 0;
 }
-/* line 71, ../sass/_base.sass */
+/* line 67, ../sass/_base.sass */
 header .header_text h3 .line {
   position: absolute;
   background-color: #cccccc;
@@ -375,28 +375,28 @@ header .header_text h3 .line {
   width: 100%;
   height: 3px;
 }
-/* line 78, ../sass/_base.sass */
+/* line 74, ../sass/_base.sass */
 header .header_text h2 {
   color: #8c8c8c;
   font-weight: normal;
 }
-/* line 81, ../sass/_base.sass */
+/* line 77, ../sass/_base.sass */
 header .header_text h1 {
   font-family: "Raleway", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
   color: #222222;
 }
-/* line 86, ../sass/_base.sass */
+/* line 82, ../sass/_base.sass */
 header .header_text h2 span, header .header_text h1 span {
   color: #aa151b;
   font-weight: bold;
 }
 
-/* line 89, ../sass/_base.sass */
+/* line 85, ../sass/_base.sass */
 .flags {
   margin-top: 2em;
 }
-/* line 92, ../sass/_base.sass */
+/* line 88, ../sass/_base.sass */
 .flags .flag .header {
   font-size: 2em;
   line-height: 1;
@@ -409,54 +409,91 @@ header .header_text h2 span, header .header_text h1 span {
   border-radius: 6px;
   padding: 2em 0;
   text-align: center;
+  margin-bottom: 1em;
 }
-/* line 102, ../sass/_base.sass */
+/* line 99, ../sass/_base.sass */
 .flags .flag.bad-people {
   width: 23.729%;
   float: left;
   margin-right: 1.695%;
   display: inline;
 }
-/* line 104, ../sass/_base.sass */
+/* line 101, ../sass/_base.sass */
 .flags .flag.bad-people .header {
   background-color: #aa151b;
   line-height: 70px;
 }
-/* line 107, ../sass/_base.sass */
+/* line 104, ../sass/_base.sass */
 .flags .flag.heroes {
   width: 49.153%;
   float: left;
   margin-right: 1.695%;
   display: inline;
 }
-/* line 109, ../sass/_base.sass */
+/* line 106, ../sass/_base.sass */
 .flags .flag.heroes .header {
   background-color: #f1bf00;
   line-height: 70px;
 }
-/* line 113, ../sass/_base.sass */
+/* line 110, ../sass/_base.sass */
 .flags .flag.heroes ul li {
-  width: 15.254%;
+  width: 31.034%;
   float: left;
-  margin-right: 1.695%;
+  margin-right: 3.448%;
   display: inline;
+  text-align: center;
+  margin-bottom: 1em;
 }
-/* line 115, ../sass/_base.sass */
+/* line 114, ../sass/_base.sass */
 .flags .flag.heroes ul li.last {
   float: right;
-  margin-6: 0;
+  margin-right: 0;
   #margin-left: -1em;
   display: inline;
 }
-/* line 117, ../sass/_base.sass */
+/* line 116, ../sass/_base.sass */
+.flags .flag.heroes ul li .action {
+  width: 100%;
+}
+/* line 118, ../sass/_base.sass */
+.flags .flag.heroes ul li .action span {
+  display: block;
+  width: 100%;
+  font-size: 85%;
+}
+/* line 123, ../sass/_base.sass */
+.flags .flag.heroes ul li .image {
+  height: 144px;
+  width: 144px;
+  position: relative;
+}
+/* line 127, ../sass/_base.sass */
+.flags .flag.heroes ul li .image span {
+  position: absolute;
+  left: 0em;
+  top: 0em;
+  width: 144px;
+  height: 144px;
+  background-image: url("../img/circle.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+/* line 136, ../sass/_base.sass */
+.flags .flag.heroes ul li .image img {
+  margin-top: 7px;
+}
+/* line 139, ../sass/_base.sass */
 .flags .flag.twitter-stream {
   width: 23.729%;
   float: left;
   margin-right: 1.695%;
   display: inline;
-  background-color: #aa151b;
   float: right;
   margin-right: 0;
   #margin-left: -1em;
   display: inline;
+}
+/* line 142, ../sass/_base.sass */
+.flags .flag.twitter-stream .header {
+  background-color: #aa151b;
 }
