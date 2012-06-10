@@ -2,6 +2,8 @@
 @import "compass/css3"
 @import "compass/typography/links/link-colors"
 
+@import "susy"
+
 @import "general/colors"
 @import "general/fonts"
 
@@ -9,6 +11,14 @@ $total-columns  : 12            /* a 12-column grid */
 $column-width   : 4em            /* each column is 4em wide */
 $gutter-width   : 1em            /* 1em gutters between columns */
 $grid-padding   : $gutter-width  /* 1em padding on the grid */
+
+          
+body
+    :background-image url('../img/bg.png')  
+    //:background-color $grey_lighter
+    //+background(image-url("bg.png"))
+    //:background-repeat repeat
+    //:background-position left top   
 
 
 .base
@@ -24,9 +34,88 @@ $grid-padding   : $gutter-width  /* 1em padding on the grid */
             +omega
             
 header
-  @extend .base   
-  .header_text
-    +pad(3,3)             
-    +span-columns(6)
-    +omega
-    
+    @extend .base   
+    .header_text
+        +pad(1,1)             
+        +span-columns(10)
+        +omega        
+        :text-align center  
+        :margin-top 2em 
+        .reason
+            :padding 2%
+            :width 96%
+            +border-radius(6px)
+            :background-color $grey_light   
+            +background(linear-gradient(#fff, $grey_light))
+            +single-box-shadow($grey_dark,0, 0px, 3px, false, true)            
+            p
+                :margin-bottom 0
+                a
+                    :font-size 1.6em
+                                    
+        h3   
+            :position relative
+            :text-align center
+            :width 100%
+            :margin-bottom 1em
+            .text
+                :display inline-block
+                :background-color $grey_lighter
+                :padding 0 0.3em
+                @extend .serif
+                :color $grey
+                :font-size 2.5em
+                :line-height 1
+                :position relative
+                +single-text-shadow($grey_semidark,-1px,-1px,0)
+            .line
+                :position absolute
+                :background-color $grey
+                :left 0
+                :top 1.4em
+                :width 100%
+                :height 3px   
+        h2
+            :color $grey_semidark
+            :font-weight normal 
+        h1
+            :font-family $raleway-fantasy !important
+            :font-weight normal          
+            :color $darker      
+        h2, h1
+            span
+                :color $red
+                :font-weight bold      
+.flags   
+    :margin-top 2em
+    .flag               
+        .header
+            @extend .serif    
+            :font-size 2em
+            :line-height 1        
+            :color #fff
+            :height 70px
+            +border-radius(6px)   
+            :padding 2em 0
+            :text-align center  
+            
+        &.bad-people
+            +span-columns(3)    
+            .header             
+                :background-color $red            
+                :line-height 70px
+        &.heroes
+            +span-columns(6)        
+            .header                 
+                :background-color $yellow            
+                :line-height 70px
+            ul
+                li                  
+                    +span-columns(2)
+                    &.last
+                        +omega(6)
+        &.twitter-stream
+            +span-columns(3) 
+            :background-color $red            
+            +omega
+        
